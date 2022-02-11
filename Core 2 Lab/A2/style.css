@@ -1,0 +1,42 @@
+body {
+    background-color: #1b1b1b;
+    margin: 20px;
+}
+
+.moon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #dfdf00, #e9e956,#c7a200);
+}
+
+.tree{
+    width: 100px;
+    height: 200px;
+    background: linear-gradient(
+        to top,
+        #663701,
+        #614803,
+        #098633,
+        #00a02d,
+        #1fff50
+    );
+    clip-path: polygon(
+        50% 0,
+        75% 15%,
+        55% 10%,
+        80% 30%,
+        60% 25%,
+        85% 50%,
+        65% 45%,
+        100% 70%,
+        55% 60%,
+        55% 100,
+        45% 60%,
+        0% 70%,
+        35% 45%,
+        15% 50%,
+        40% 25%,
+        20% 30%,
+        45% 10%,
+    );
