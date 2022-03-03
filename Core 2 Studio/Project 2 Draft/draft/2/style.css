@@ -22,12 +22,12 @@ body {
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
 }
 
-
 h2 {
-    font-family: "PesteTRIAL-Regular";
-    margin-right: 5cm;
-    margin-left: 5cm;
-    padding-top: 45em;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-right: 4scm;
+    margin-left: 8cm;
+    padding-top: 2em;
 }
 
 

@@ -24,7 +24,8 @@ body {
 
 
 h2 {
-    font-family: "PesteTRIAL-Regular";
+    font-family: sans-serif;
+    font-weight: 100;
     margin-right: 5cm;
     margin-left: 5cm;
     padding-top: 45em;
