@@ -22,13 +22,20 @@ body {
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
 }
 
+.type {
+  margin-top: 55em;
+  background-color: white;
+  z-index: 10;
+}
 
 h2 {
     font-family: sans-serif;
     font-weight: 100;
     margin-right: 5cm;
     margin-left: 5cm;
-    padding-top: 45em;
+    padding-top: 1em;
+    background-color: white;
+
 }
 
 
