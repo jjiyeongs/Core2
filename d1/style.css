@@ -40,6 +40,14 @@ body {
     z-index: 100;
 }
 
+h1 {
+    font-family: "PesteTRIAL-Regular";
+    font-weight: 100;
+    margin-right: 10cm;
+    margin-left: 5cm;
+    padding-top: 1em;
+}
+
 h2 {
     font-family: sans-serif;
     font-weight: 100;
@@ -49,6 +57,13 @@ h2 {
     background-color: white;
 }
 
+h3 {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-right: 7cm;
+    margin-left: 5cm;
+    padding-top: 1em;
+}
 
 .circular-text {
     z-index: -10;
