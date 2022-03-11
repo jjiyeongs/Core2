@@ -3,13 +3,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const spotlight = document.querySelector('.spotlight');
 
-  let spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
+  let spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.99) 200px)';
 
   window.addEventListener('mousemove', e => updateSpotlight(e));
 
   window.addEventListener('mousedown', e => {
 
-    spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.95) 150px)';
+    spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.97) 150px)';
 
     updateSpotlight(e);
 
