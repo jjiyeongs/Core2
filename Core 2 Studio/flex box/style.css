@@ -1,0 +1,46 @@
+h1 {
+    font-size: 30px;
+    text-align: inline;
+    margin-left: 327px;
+    font-family: impact;
+    color:#000000;
+}
+h3{
+    font-size: 60px;
+    margin-left: 50px;
+    font-family: impact;
+    color:#000000;
+}
+.week {
+    display: flex;
+    
+  }
+  .weeek {
+    display: flex;
+    flex-grow: 5;
+    flex-shrink: 5;
+    flex-basis: 0;
+    font-size: 15px;
+    padding: 5px;
+    color:  #000000;
+    font-family: impact;
+    max-width: 1000px;
+    margin: 10px auto;
+
+  }
+  .day {
+    flex-grow: 5;
+    flex-shrink: 5;
+    flex-basis: 0;
+    color:  #000000;
+    padding: 5px;
+    font-family: impact;
+    box-shadow: 
+      -1px -1px  #000000, 
+      inset -1px -1px 0 0  #000000;
+  }
+  .month {
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
