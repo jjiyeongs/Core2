@@ -21,7 +21,7 @@ p span {
     opacity: 0;
 }
 
-@keyframes .matrix {
+@keyframes matrix {
     0% {
         color: #fff;
         opacity: 1;
