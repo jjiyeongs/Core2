@@ -11,7 +11,7 @@ function makeID() {
   
 function generateText() {
     const w = 10;
-    const h = 25;
+    const h = 40;
     for (let i = 0; i < w; i++) {
         const timeout = Math.floor(Math.random() * 10) * 1000;
         let delay = 0;
