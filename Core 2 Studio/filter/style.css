@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html,body{
+	background:rgb(255, 255, 255);
+	cursor: url('assets/apple.png'), auto;
+}
+
+img{
+	position: relative;
+	float:left;
+	width:25%;
+	height:25vw;
+}
+
+h1{
+	width: 50%;
+	text-align: center;
+	margin:35px auto;
+	padding:14px;
+	color:rgb(0, 0, 0);
+	background:rgb(255, 255, 255);
+	font-size: 3em;
+	font-family: helvetica;
+	font-style: normal;
+	font-weight: lighter;
+}
+
+select{
+	cursor: url('assets/apple.png'), auto;
+	font-size:25px;
+	margin:14px;
+	margin-top: 2em;
+	color: rgb(226, 43, 43);
+	font-family: helvetica;
+	font-style: normal;
+	font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
