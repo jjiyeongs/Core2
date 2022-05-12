@@ -1,62 +1,139 @@
-* {
-    margin: 0px;
-    padding: 0px;
+
+input[type=range] {
     box-sizing: border-box;
-}
-body {
-    background-color: #81A684;
-}
-.app {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 650px;
-    height: 650px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.app .controls {
-    height: 50px;
+    font-size: 16px;
+    line-height: 1;
+    height: 2em;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 100%;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2em;
+    height: 2em;
+    margin-top: 0;
+    background-color: #c19ed6;
+    border-radius: 1em;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 2em;
+    height: 2em;
+    margin-top: 0;
+    background-color: #c19ed6;
+    border-radius: 1em;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  input[type=range]::-ms-thumb {
+    width: 2em;
+    height: 2em;
+    margin-top: 0;
+    background-color: #c19ed6;
+    border-radius: 1em;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  input[type=range]:hover::-webkit-slider-thumb {
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+  input[type=range]:hover::-moz-range-thumb {
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+  input[type=range]:hover::-ms-thumb {
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+  input[type=range]:active::-webkit-slider-thumb {
+    border-color: #ccc3ff;
+  }
+  input[type=range]:active::-moz-range-thumb {
+    border-color: #ffffff;
+  }
+  input[type=range]:active::-ms-thumb {
+    border-color: #ffffff;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    cursor: pointer;
+    height: 1em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    cursor: pointer;
+    height: 1em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+  }
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  section {
     display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
     align-items: center;
-    background: #F8C7CC;
-    padding: 0px 10px;
-}
-.app .controls .title {
-    font-weight: 600;
-    color: #222;
-    width: 80px;
-}
-.app .controls .type,
-.app .controls .size,
-.app .controls .color {
-    margin: 0px 10px;
-}
-.app .controls .type input {
-    display: none;
-}
-.app .controls .type label {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+              -45deg, 
+              rgb(173, 198, 209) 0%, 
+              rgb(146, 158, 228) 25%, 
+              rgb(180, 144, 194) 51%, 
+              rgb(209, 149, 170) 100%
+        );  
+        animation: AnimateBG 20s ease infinite;
+      }
+      
+      @keyframes AnimateBG { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
+
+  }
+  section div {
+    margin: auto;
+    width: 80%;
+  }
+  section h1 {
+    font-family: "COOLUMBUS";
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 50px;
     text-align: center;
-    line-height: 30px;
-    margin: 0px 2px;
-    cursor: pointer;
-}
-.app .controls .type input :checked + label {
-    background: #111;
-    color: #eee;
-    border-radius: 50%;
-}
-.app .controls .size input {
-    height: 10px;
-}
-.app .controls .actions {
-    flex: 1;
-    text-align: right;
-}
-.app .controls .actions button {
-    padding: 5px 10px;
-    cursor: pointer;
-}
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.822);
+  }
+
+  img {
+      margin-top: 40px;
+      margin-left: 280px;
+      max-width: 8%;
+    }
+
+  

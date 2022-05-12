@@ -1,25 +1,26 @@
-function_(selector){
-    return document.querySelector(selector);
-}
-function setup(){
-    let canvas = createCanvas(650, 600);
-    canvas.parent("canvas-wrapper");
-    background(255);
-}
-function mouseDragged(){
-    let type = _("#pen-pencil").checked?"pencil":"brush";
-    let size = parseInt(_("#pen-size").value);
-    fill (color);
-    stroke(color);
-    if(type == "pencil"){
-        AudioListener(pmouseX, pmouseY, mouseX, mouseY);
-    } else {
-        ellipse(mouseX, mouseY, size, size);
-    }
-}
-_("#reset-canvas").addEventListener("click", function(){
-    background(255);
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
-_("#save-canvas").addEventListener("click",function(){
-    saveCanvas(canvas, "sketch","png");
-});
+</script>

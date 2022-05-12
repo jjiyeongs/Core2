@@ -1,0 +1,51 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "COOLUMBUS";
+  margin-top: 400px;
+  margin-left: 50px;
+  font-size: 44px;
+  color: #ffffff;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+            -45deg, 
+            rgb(173, 198, 209) 0%, 
+            rgb(146, 158, 228) 25%, 
+            rgb(180, 144, 194) 51%, 
+            rgb(209, 149, 170) 100%
+      );  
+      animation: AnimateBG 20s ease infinite;
+    }
+    
+    @keyframes AnimateBG { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+  background-blend-mode: overlay;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  font-family: 'Cormorant Garamond';
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+#cursor {
+  animation: blinker 1s step-end infinite;
+}
+
+.colors {
+  display: none;
+}
